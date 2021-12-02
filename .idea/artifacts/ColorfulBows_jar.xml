@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="ColorfulBows:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/ColorfulBows_jar</output-path>
+    <root id="archive" name="ColoredBows.jar">
+      <element id="module-output" name="ColorfulBows" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../Spigot 1.18/Spigot/Spigot-API/target/spigot-api-1.18-R0.1-SNAPSHOT-shaded.jar" path-in-jar="/" />
+      <element id="file-copy" path="$PROJECT_DIR$/src/me/joshwright/colorfulbows/plugin.yml" />
+    </root>
+  </artifact>
+</component>
