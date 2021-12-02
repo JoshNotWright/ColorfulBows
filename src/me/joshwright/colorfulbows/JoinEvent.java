@@ -1,4 +1,4 @@
-package me.joshwright.coloredbows;
+package me.joshwright.colorfulbows;
 
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;

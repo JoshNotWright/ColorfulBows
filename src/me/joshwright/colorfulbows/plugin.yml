@@ -1,0 +1,5 @@
+name: ColorfulBows
+version: 1.0
+author: Josh Wright
+api-version: 1.18
+main: me.joshwright.colorfulbows.ColorfulBows
