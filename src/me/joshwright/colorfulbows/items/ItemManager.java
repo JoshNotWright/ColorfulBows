@@ -16,6 +16,14 @@ public class ItemManager {
     public static ItemStack pinkBow;
     public static ItemStack purpleString;
     public static ItemStack purpleBow;
+//    public static ItemStack orangeString;
+//    public static ItemStack orangeBow;
+//    public static ItemStack yellowString;
+//    public static ItemStack yellowBow;
+//    public static ItemStack redString;
+//    public static ItemStack redBow;
+//    public static ItemStack blackString;
+//    public static ItemStack blackBow;
 
 
     public static void init() {
@@ -23,6 +31,14 @@ public class ItemManager {
         createPinkBow();
         createPurpleString();
         createPurpleBow();
+//        createOrangeString();
+//        createOrangeBow();
+//        createYellowString();
+//        createYellowBow();
+//        createRedString();
+//        createRedBow();
+//        createBlackString();
+//        createBlackBow();
     }
 
     private static void createPinkString() {
@@ -98,4 +114,86 @@ public class ItemManager {
 
         Bukkit.addRecipe(purpleStringBow);
     }
+
+//    private static void createOrangeString() {
+//        ItemStack item = new ItemStack(Material.STRING, 1);
+//        ItemMeta meta = item.getItemMeta();
+//        meta.setDisplayName("§6Orange String");
+//        List<String> lore = new ArrayList<>();
+//        lore.add("Where did all those orange sheep go?");
+//        meta.setLore(lore);
+//        meta.setCustomModelData(2251005);
+//        item.setItemMeta(meta);
+//        orangeString = item;
+//
+//        item.setAmount(4);
+//        ShapelessRecipe orangeWoolString = new ShapelessRecipe(NamespacedKey.minecraft("orangestringwool"), item);
+//        orangeWoolString.addIngredient(1, Material.ORANGE_WOOL);
+//
+//        Bukkit.addRecipe(orangeWoolString);
+//    }
+
+//    private static void createOrangeBow() {
+//        ItemStack item = new ItemStack(Material.BOW, 1);
+//        ItemMeta meta = item.getItemMeta();
+//        meta.setDisplayName("§6Orange Bow");
+//        List<String> lore = new ArrayList<>();
+//        lore.add("Harness the powers of the orange sheep");
+//        meta.setLore(lore);
+//        meta.setCustomModelData(2251006);
+//        item.setItemMeta(meta);
+//        orangeBow = item;
+//
+//        ShapedRecipe orangeStringBow = new ShapedRecipe(NamespacedKey.minecraft("orangestringbow"), item);
+//        orangeStringBow.shape(" KS", "K S", " KS");
+//        orangeStringBow.setIngredient('K', Material.STICK);
+//        orangeStringBow.setIngredient('S',new RecipeChoice.ExactChoice(orangeString));
+//
+//        Bukkit.addRecipe(orangeStringBow);
+//    }
+
+//    private static void createYellowString() {
+//        ItemStack item = new ItemStack(Material.STRING, 1);
+//        ItemMeta meta = item.getItemMeta();
+//        meta.setDisplayName("§eYellow String");
+//        List<String> lore = new ArrayList<>();
+//        lore.add("Where did all those yellow sheep go?");
+//        meta.setLore(lore);
+//        meta.setCustomModelData(2251007);
+//        item.setItemMeta(meta);
+//        yellowString = item;
+//
+//        item.setAmount(4);
+//        ShapelessRecipe yellowWoolString = new ShapelessRecipe(NamespacedKey.minecraft("yellowstringwool"), item);
+//        yellowWoolString.addIngredient(1, Material.YELLOW_WOOL);
+//
+//        Bukkit.addRecipe(yellowWoolString);
+//    }
+//
+//    private static void createYellowBow() {
+//        ItemStack item = new ItemStack(Material.BOW, 1);
+//        ItemMeta meta = item.getItemMeta();
+//        meta.setDisplayName("§eYellow Bow");
+//        List<String> lore = new ArrayList<>();
+//        lore.add("Harness the powers of the yellow sheep");
+//        meta.setLore(lore);
+//        meta.setCustomModelData(2251008);
+//        item.setItemMeta(meta);
+//        yellowBow = item;
+//
+//        ShapedRecipe yellowStringBow = new ShapedRecipe(NamespacedKey.minecraft("yellowstringbow"), item);
+//        yellowStringBow.shape(" KS", "K S", " KS");
+//        yellowStringBow.setIngredient('K', Material.STICK);
+//        yellowStringBow.setIngredient('S',new RecipeChoice.ExactChoice(yellowString));
+//
+//        Bukkit.addRecipe(yellowStringBow);
+//    }
+
+    //TODO createRedString
+
+    //TODO createRedBow
+
+    //TODO createBlackString
+
+    //TODO createBlackBow
 }
