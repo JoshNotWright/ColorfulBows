@@ -35,5 +35,20 @@ public class ParticleEffects implements Listener {
             event.getPlayer().getWorld().spawnParticle(Particle.REDSTONE,event.getPlayer().getLocation(), 14, 0.1f, 0.1f, 0.1f, 0,
                     new Particle.DustOptions(Color.fromRGB(255,140,0), 1));
         }
+
+        if (event.getPlayer().getInventory().getItemInMainHand().getItemMeta().getCustomModelData() == (yellowBow.getItemMeta().getCustomModelData())) {
+            event.getPlayer().getWorld().spawnParticle(Particle.REDSTONE,event.getPlayer().getLocation(), 14, 0.1f, 0.1f, 0.1f, 0,
+                    new Particle.DustOptions(Color.fromRGB(255,255,0), 1));
+        }
+
+        if (event.getPlayer().getInventory().getItemInMainHand().getItemMeta().getCustomModelData() == (redBow.getItemMeta().getCustomModelData())) {
+            event.getPlayer().getWorld().spawnParticle(Particle.REDSTONE,event.getPlayer().getLocation(), 14, 0.1f, 0.1f, 0.1f, 0,
+                    new Particle.DustOptions(Color.fromRGB(255,0,0), 1));
+        }
+
+        if (event.getPlayer().getInventory().getItemInMainHand().getItemMeta().getCustomModelData() == (blackBow.getItemMeta().getCustomModelData())) {
+            event.getPlayer().getWorld().spawnParticle(Particle.REDSTONE,event.getPlayer().getLocation(), 14, 0.1f, 0.1f, 0.1f, 0,
+                    new Particle.DustOptions(Color.fromRGB(0,0,0), 1));
+        }
     }
 }

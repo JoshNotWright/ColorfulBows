@@ -20,12 +20,12 @@ public class ItemManager {
     public static ItemStack purpleBow;
     public static ItemStack orangeString;
     public static ItemStack orangeBow;
-//    public static ItemStack yellowString;
-//    public static ItemStack yellowBow;
-//    public static ItemStack redString;
-//    public static ItemStack redBow;
-//    public static ItemStack blackString;
-//    public static ItemStack blackBow;
+    public static ItemStack yellowString;
+    public static ItemStack yellowBow;
+    public static ItemStack redString;
+    public static ItemStack redBow;
+    public static ItemStack blackString;
+    public static ItemStack blackBow;
 
 
     public static void init() {
@@ -35,12 +35,12 @@ public class ItemManager {
         createPurpleBow();
         createOrangeString();
         createOrangeBow();
-//        createYellowString();
-//        createYellowBow();
-//        createRedString();
-//        createRedBow();
-//        createBlackString();
-//        createBlackBow();
+        createYellowString();
+        createYellowBow();
+        createRedString();
+        createRedBow();
+        createBlackString();
+        createBlackBow();
     }
 
     private static void createPinkString() {
@@ -154,114 +154,114 @@ public class ItemManager {
         Bukkit.addRecipe(orangeStringBow);
     }
 
-//    private static void createYellowString() {
-//        ItemStack item = new ItemStack(Material.STRING, 1);
-//        ItemMeta meta = item.getItemMeta();
-//        meta.setDisplayName("§eYellow String");
-//        List<String> lore = new ArrayList<>();
-//        lore.add("Where did all those yellow sheep go?");
-//        meta.setLore(lore);
-//        meta.setCustomModelData(2251007);
-//        item.setItemMeta(meta);
-//        yellowString = item;
-//
-//        item.setAmount(4);
-//        ShapelessRecipe yellowWoolString = new ShapelessRecipe(NamespacedKey.minecraft("yellowstringwool"), item);
-//        yellowWoolString.addIngredient(1, Material.YELLOW_WOOL);
-//
-//        Bukkit.addRecipe(yellowWoolString);
-//    }
-//
-//    private static void createYellowBow() {
-//        ItemStack item = new ItemStack(Material.BOW, 1);
-//        ItemMeta meta = item.getItemMeta();
-//        meta.setDisplayName("§eYellow Bow");
-//        List<String> lore = new ArrayList<>();
-//        lore.add("Harness the powers of the yellow sheep");
-//        meta.setLore(lore);
-//        meta.setCustomModelData(2251008);
-//        item.setItemMeta(meta);
-//        yellowBow = item;
-//
-//        ShapedRecipe yellowStringBow = new ShapedRecipe(NamespacedKey.minecraft("yellowstringbow"), item);
-//        yellowStringBow.shape(" KS", "K S", " KS");
-//        yellowStringBow.setIngredient('K', Material.STICK);
-//        yellowStringBow.setIngredient('S',new RecipeChoice.ExactChoice(yellowString));
-//
-//        Bukkit.addRecipe(yellowStringBow);
-//    }
+    private static void createYellowString() {
+        ItemStack item = new ItemStack(Material.STRING, 1);
+        ItemMeta meta = item.getItemMeta();
+        meta.setDisplayName("§eYellow String");
+        List<String> lore = new ArrayList<>();
+        lore.add("Where did all those yellow sheep go?");
+        meta.setLore(lore);
+        meta.setCustomModelData(2251007);
+        item.setItemMeta(meta);
+        yellowString = item;
 
-//    private static void createRedString() {
-//        ItemStack item = new ItemStack(Material.STRING, 1);
-//        ItemMeta meta = item.getItemMeta();
-//        meta.setDisplayName("§4Red String");
-//        List<String> lore = new ArrayList<>();
-//        lore.add("Where did all those red sheep go?");
-//        meta.setLore(lore);
-//        meta.setCustomModelData(2251009);
-//        item.setItemMeta(meta);
-//        redString = item;
-//
-//        item.setAmount(4);
-//        ShapelessRecipe redWoolString = new ShapelessRecipe(NamespacedKey.minecraft("redstringwool"), item);
-//        redWoolString.addIngredient(1, Material.RED_WOOL);
-//
-//        Bukkit.addRecipe(redWoolString);
-//    }
-//
-//    private static void createRedBow() {
-//        ItemStack item = new ItemStack(Material.BOW, 1);
-//        ItemMeta meta = item.getItemMeta();
-//        meta.setDisplayName("§4Red Bow");
-//        List<String> lore = new ArrayList<>();
-//        lore.add("Harness the powers of the red sheep");
-//        meta.setLore(lore);
-//        meta.setCustomModelData(2251010);
-//        item.setItemMeta(meta);
-//        redBow = item;
-//
-//        ShapedRecipe redStringBow = new ShapedRecipe(NamespacedKey.minecraft("redstringbow"), item);
-//        redStringBow.shape(" KS", "K S", " KS");
-//        redStringBow.setIngredient('K', Material.STICK);
-//        redStringBow.setIngredient('S',new RecipeChoice.ExactChoice(redString));
-//
-//        Bukkit.addRecipe(redStringBow);
-//    }
+        item.setAmount(4);
+        ShapelessRecipe yellowWoolString = new ShapelessRecipe(NamespacedKey.minecraft("yellowstringwool"), item);
+        yellowWoolString.addIngredient(1, Material.YELLOW_WOOL);
 
-//    private static void createBlackString() {
-//        ItemStack item = new ItemStack(Material.STRING, 1);
-//        ItemMeta meta = item.getItemMeta();
-//        meta.setDisplayName("§0Black String");
-//        List<String> lore = new ArrayList<>();
-//        lore.add("Where did all those black sheep go?");
-//        meta.setLore(lore);
-//        meta.setCustomModelData(2251011);
-//        item.setItemMeta(meta);
-//        blackString = item;
-//
-//        item.setAmount(4);
-//        ShapelessRecipe blackWoolString = new ShapelessRecipe(NamespacedKey.minecraft("blackstringwool"), item);
-//        blackWoolString.addIngredient(1, Material.BLACK_WOOL);
-//
-//        Bukkit.addRecipe(blackWoolString);
-//    }
-//
-//    private static void createBlackBow() {
-//        ItemStack item = new ItemStack(Material.BOW, 1);
-//        ItemMeta meta = item.getItemMeta();
-//        meta.setDisplayName("§0Black Bow");
-//        List<String> lore = new ArrayList<>();
-//        lore.add("Harness the powers of the black sheep");
-//        meta.setLore(lore);
-//        meta.setCustomModelData(2251012);
-//        item.setItemMeta(meta);
-//        blackBow = item;
-//
-//        ShapedRecipe blackStringBow = new ShapedRecipe(NamespacedKey.minecraft("blackstringbow"), item);
-//        blackStringBow.shape(" KS", "K S", " KS");
-//        blackStringBow.setIngredient('K', Material.STICK);
-//        blackStringBow.setIngredient('S',new RecipeChoice.ExactChoice(blackString));
-//
-//        Bukkit.addRecipe(blackStringBow);
-//    }
+        Bukkit.addRecipe(yellowWoolString);
+    }
+
+    private static void createYellowBow() {
+        ItemStack item = new ItemStack(Material.BOW, 1);
+        ItemMeta meta = item.getItemMeta();
+        meta.setDisplayName("§eYellow Bow");
+        List<String> lore = new ArrayList<>();
+        lore.add("Harness the powers of the yellow sheep");
+        meta.setLore(lore);
+        meta.setCustomModelData(2251008);
+        item.setItemMeta(meta);
+        yellowBow = item;
+
+        ShapedRecipe yellowStringBow = new ShapedRecipe(NamespacedKey.minecraft("yellowstringbow"), item);
+        yellowStringBow.shape(" KS", "K S", " KS");
+        yellowStringBow.setIngredient('K', Material.STICK);
+        yellowStringBow.setIngredient('S',new RecipeChoice.ExactChoice(yellowString));
+
+        Bukkit.addRecipe(yellowStringBow);
+    }
+
+    private static void createRedString() {
+        ItemStack item = new ItemStack(Material.STRING, 1);
+        ItemMeta meta = item.getItemMeta();
+        meta.setDisplayName("§4Red String");
+        List<String> lore = new ArrayList<>();
+        lore.add("Where did all those red sheep go?");
+        meta.setLore(lore);
+        meta.setCustomModelData(2251009);
+        item.setItemMeta(meta);
+        redString = item;
+
+        item.setAmount(4);
+        ShapelessRecipe redWoolString = new ShapelessRecipe(NamespacedKey.minecraft("redstringwool"), item);
+        redWoolString.addIngredient(1, Material.RED_WOOL);
+
+        Bukkit.addRecipe(redWoolString);
+    }
+
+    private static void createRedBow() {
+        ItemStack item = new ItemStack(Material.BOW, 1);
+        ItemMeta meta = item.getItemMeta();
+        meta.setDisplayName("§4Red Bow");
+        List<String> lore = new ArrayList<>();
+        lore.add("Harness the powers of the red sheep");
+        meta.setLore(lore);
+        meta.setCustomModelData(2251010);
+        item.setItemMeta(meta);
+        redBow = item;
+
+        ShapedRecipe redStringBow = new ShapedRecipe(NamespacedKey.minecraft("redstringbow"), item);
+        redStringBow.shape(" KS", "K S", " KS");
+        redStringBow.setIngredient('K', Material.STICK);
+        redStringBow.setIngredient('S',new RecipeChoice.ExactChoice(redString));
+
+        Bukkit.addRecipe(redStringBow);
+    }
+
+    private static void createBlackString() {
+        ItemStack item = new ItemStack(Material.STRING, 1);
+        ItemMeta meta = item.getItemMeta();
+        meta.setDisplayName("§7Black String");
+        List<String> lore = new ArrayList<>();
+        lore.add("Where did all those black sheep go?");
+        meta.setLore(lore);
+        meta.setCustomModelData(2251011);
+        item.setItemMeta(meta);
+        blackString = item;
+
+        item.setAmount(4);
+        ShapelessRecipe blackWoolString = new ShapelessRecipe(NamespacedKey.minecraft("blackstringwool"), item);
+        blackWoolString.addIngredient(1, Material.BLACK_WOOL);
+
+        Bukkit.addRecipe(blackWoolString);
+    }
+
+    private static void createBlackBow() {
+        ItemStack item = new ItemStack(Material.BOW, 1);
+        ItemMeta meta = item.getItemMeta();
+        meta.setDisplayName("§7Black Bow");
+        List<String> lore = new ArrayList<>();
+        lore.add("Harness the powers of the black sheep");
+        meta.setLore(lore);
+        meta.setCustomModelData(2251012);
+        item.setItemMeta(meta);
+        blackBow = item;
+
+        ShapedRecipe blackStringBow = new ShapedRecipe(NamespacedKey.minecraft("blackstringbow"), item);
+        blackStringBow.shape(" KS", "K S", " KS");
+        blackStringBow.setIngredient('K', Material.STICK);
+        blackStringBow.setIngredient('S',new RecipeChoice.ExactChoice(blackString));
+
+        Bukkit.addRecipe(blackStringBow);
+    }
 }
