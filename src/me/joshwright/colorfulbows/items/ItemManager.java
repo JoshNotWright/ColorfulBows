@@ -80,8 +80,6 @@ public class ItemManager {
         Bukkit.addRecipe(pinkStringBow);
     }
 
-
-
     private static void createPurpleString() {
         ItemStack item = new ItemStack(Material.STRING, 1);
         ItemMeta meta = item.getItemMeta();

@@ -18,7 +18,7 @@ public class ParticleEffects implements Listener {
     @EventHandler
     public void onPlayerItemHeld(PlayerMoveEvent event) {
 
-        if (!event.getPlayer().getInventory().getItemInMainHand().getItemMeta().hasCustomModelData() || event.getPlayer().getInventory().getItemInMainHand().getType().equals(Material.AIR)) {
+        if (event.getPlayer().getInventory().getItemInMainHand().getType().equals(Material.AIR) || (!event.getPlayer().getInventory().getItemInMainHand().getItemMeta().hasCustomModelData()))  {
             return;
         }
 
