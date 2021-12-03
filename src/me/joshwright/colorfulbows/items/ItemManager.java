@@ -1,11 +1,13 @@
 package me.joshwright.colorfulbows.items;
 
 import org.bukkit.*;
-import org.bukkit.inventory.ItemStack;
-import org.bukkit.inventory.RecipeChoice;
-import org.bukkit.inventory.ShapedRecipe;
-import org.bukkit.inventory.ShapelessRecipe;
+import org.bukkit.event.EventHandler;
+import org.bukkit.event.block.Action;
+import org.bukkit.event.player.PlayerInteractEvent;
+import org.bukkit.event.player.PlayerItemHeldEvent;
+import org.bukkit.inventory.*;
 import org.bukkit.inventory.meta.ItemMeta;
+import xyz.xenondevs.particle.ParticleEffect;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -77,6 +79,8 @@ public class ItemManager {
 
         Bukkit.addRecipe(pinkStringBow);
     }
+
+
 
     private static void createPurpleString() {
         ItemStack item = new ItemStack(Material.STRING, 1);
