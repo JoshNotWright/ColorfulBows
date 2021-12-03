@@ -7,7 +7,7 @@ public class ColorfulBows extends JavaPlugin {
 
     @Override
     public void onEnable() {
-//        this.getServer().getPluginManager().registerEvents(new JoinEvent(), this);
+        this.getServer().getPluginManager().registerEvents(new JoinEvent(), this);
         ItemManager.init();
     }
 }

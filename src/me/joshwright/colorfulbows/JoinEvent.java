@@ -8,6 +8,6 @@ public class JoinEvent implements Listener {
 
     @EventHandler
     public void onJoin(PlayerJoinEvent event) {
-//        event.getPlayer().setResourcePack(); // Direct download to plugin resource pack
+        event.getPlayer().setResourcePack("https://github.com/JoshNotWright/ColorfulBows/releases/download/v0.2.0-alpha/Colorful.Bows.Resources.zip"); // Direct download to plugin resource pack
     }
 }
