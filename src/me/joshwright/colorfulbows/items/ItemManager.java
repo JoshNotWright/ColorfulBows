@@ -1,6 +1,7 @@
 package me.joshwright.colorfulbows.items;
 
 import org.bukkit.*;
+import org.bukkit.entity.Item;
 import org.bukkit.inventory.*;
 import org.bukkit.inventory.meta.ItemMeta;
 
@@ -21,6 +22,24 @@ public class ItemManager {
     public static ItemStack redBow;
     public static ItemStack blackString;
     public static ItemStack blackBow;
+//    public static ItemStack blueString;
+//    public static ItemStack blueBow;
+//    public static ItemStack lightBlueString;
+//    public static ItemStack lightBlueBow;
+//    public static ItemStack cyanString;
+//    public static ItemStack cyanBow;
+//    public static ItemStack grayString;
+//    public static ItemStack grayBow;
+//    public static ItemStack lightGrayString;
+//    public static ItemStack lightGrayBow;
+//    public static ItemStack magentaString;
+//    public static ItemStack magentaBow;
+//    public static ItemStack brownString;
+//    public static ItemStack brownBow;
+//    public static ItemStack greenString;
+//    public static ItemStack greenBow;
+//    public static ItemStack limeString;
+//    public static ItemStack limeBow;
 
 
     public static void init() {
@@ -36,6 +55,24 @@ public class ItemManager {
         createRedBow();
         createBlackString();
         createBlackBow();
+//        createBlueString();
+//        createBlueBow();
+//        createLightBlueString();
+//        createLightBlueBow();
+//        createCyanString();
+//        createCyanBow();
+//        createGrayString();
+//        createGrayBow();
+//        createLightGrayString();
+//        createLightGrayBow();
+//        createMagentaString();
+//        createMagentaBow();
+//        createBrownString();
+//        createBrownBow();
+//        createGreenString();
+//        createGreenBow();
+//        createLimeString();
+//        createLimeBow();
     }
 
     private static void createPinkString() {
